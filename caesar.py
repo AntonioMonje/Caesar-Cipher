@@ -10,7 +10,7 @@ def encrypt(cipher,shiftA):
     for i in range(len(cipher)):
         char = cipher[i]
         #if its a space leave it as a space
-        if (char == " "):
+        if (char == " " or not char.isalpha()) :
             result += chr((ord(char)))
         # encrypt uppercase characters
         elif (char.isupper()):
@@ -25,7 +25,7 @@ def main():
         #Get the string you want to encrypt or decrypt
         shiftA = 800
         cipher = raw_input("enter the ceaser cipher you want to encrypt or decrypt: ")
-        print("If you choose encrypt you shit to the right decrypt shift to the left")
+        print("If you encrypt you shift to the right decrypt shift to the left")
         while(shiftA > 26 or shiftA < -26):
             shiftA = input("How many numbers do you want to shift each character? ")
             if(shiftA > 26 or shiftA < -26):
