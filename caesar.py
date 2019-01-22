@@ -2,7 +2,7 @@
 #The Caesar cipher is a type of substitution cipher where the plaintext is 'shifted' a certain number of places down the alphabet. For example, with a shift of 1, A would be replaced by B, B would become C, and so on.
 #Program written by Antonio Monje
 
-#check the above function
+
 def encrypt(cipher,shiftA):
     result = ""
 
